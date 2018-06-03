@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous">
+    
+    <link href="leftSection.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid wrapDealsSection">
+
+
+        <div class="col-md-4 nLP">
+            <div class="leftSection">
+                <div class="dealHeader">
+                    <span>Deal Details</span>
+                    <hr/>
+                </div>
+                <form class="row">
+                    <div class="form-group  col-md-12">
+                        <label class="" for="clientName">CLIENT NAME</label>
+                        <input type="email" class="form-control" id="clientName" placeholder="">
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <label class="" for="assetType">ASSET TYPE</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle width100" type="button" id="assetType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu width100" aria-labelledby="assetType">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <label class="" for="spaceType">SPACE TYPE</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle width100" type="button" id="spaceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu width100" aria-labelledby="spaceType">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group  col-md-12">
+                        <label class="" for="city">CITY</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="city">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+5 km <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">+10 km</a></li>
+                                    <li><a href="#">+15 km</a></li>
+                                    <li><a href="#">+20 km</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <label class="" for="areaRequired">AREA REQUIRED</label>
+                        <div class="input-group">
+                            <input class="form-control">
+                            <div class="input-group-btn midConnect bgBlue"><span class="btn">to</span></div>
+                            <input class="form-control rightRadius">
+                            <div class="input-group-btn"> <span class="aV btn">m<sup>2</sup></span></div>
+                        </div>
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <label class="" for="startDate">START DATE</label>
+                        <div class="form-group">
+                            <input class="form-control" id="datepicker">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                    </div>
+                    <div class="form-group  col-md-6 leaseGroup">
+                        <label class="" for="leaseLength">LEASE LENGTH</label>
+                        <div class="input-group">
+                            <input class="form-control" aria-label="leaseLength">
+                            <div class="input-group-btn bgBlue rightRadius">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">months <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">years</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <label class="" for="dealType">DEAL TYPE</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle width100" type="button" id="dealType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu width100" aria-labelledby="dealType">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <label class="" for="dealLead">DEAL LEAD</label>
+                        <input type="email" class="form-control" id="dealLead" placeholder="">
+                    </div>
+                    <div class="form-group  col-md-6">
+                        <label class="" for="dealStage">DEAL STAGE</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle width100" type="button" id="dealStage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu width100" aria-labelledby="dealStage">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dealHeader col-md-12">
+                        <span>Notes</span>
+                        <hr/>
+                    </div>
+                    <div class="form-group  col-md-12">
+                        <textarea type="" class="form-control width100" id="dealLead" placeholder=""></textarea>
+                    </div>
+                    <div class="dealHeader col-md-12">
+                        <span>Contact Details</span>
+                        <hr/>
+                    </div>
+                    <div class=" col-md-12 form-group contactSearch">
+                        <div class="dropdown">
+                            <input class="dropdown-toggle width100 form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="glyphicon glyphicon-search searchIcon"></span>
+                            <ul class="dropdown-menu width100" aria-labelledby="dealStage">
+                                <li class="contactDetailsContainer">
+                                    <div class="contactDetailsSection">
+                                        <div><b>Mrs. Margaret Elizabeth Thatcher</b></div>
+                                        <div><span class="fontMedium">Managing Director</span> | myTaxi</div>
+                                        <div class="m10">
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-envelope"></span>
+                                            <span>Margaret@myTaxi.de</span>
+                                            </span>
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                            <span>+41 21 803 08 44</span>
+                                            </span>
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                            <span>+41 79 793 04 31</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="contactDetailsContainer">
+                                    <div class="contactDetailsSection">
+                                        <div><b>Mrs. Margaret Elizabeth Thatcher</b></div>
+                                        <div><span class="fontMedium">Managing Director</span> | myTaxi</div>
+                                        <div class="m10">
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-envelope"></span>
+                                            <span>Margaret@myTaxi.de</span>
+                                            </span>
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                            <span>+41 21 803 08 44</span>
+                                            </span>
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                            <span>+41 79 793 04 31</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="contactDetailsContainer">
+                                    <div class="contactDetailsSection">
+                                        <div><b>Mrs. Margaret Elizabeth Thatcher</b></div>
+                                        <div><span class="fontMedium">Managing Director</span> | myTaxi</div>
+                                        <div class="m10">
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-envelope"></span>
+                                            <span>Margaret@myTaxi.de</span>
+                                            </span>
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                            <span>+41 21 803 08 44</span>
+                                            </span>
+                                            <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                            <span>+41 79 793 04 31</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="contactDetailsContainer">
+                            <div class="contactDetailsSection">
+                                <div class="moreActionWrapper">
+                                    <div class="actionWrap pull-right">
+                                        <span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#editDetails"></span>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </div>
+                                    <div><b>Mrs. Margaret Elizabeth Thatcher</b></div>
+                                    <div><span class="fontMedium">Managing Director</span> | myTaxi</div>
+                                </div>
+                                <div class="m10">
+                                    <span class="contactDetail">
+                          <span class="glyphicon glyphicon-envelope"></span>
+                                    <span>Margaret@myTaxi.de</span>
+                                    </span>
+                                    <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                    <span>+41 21 803 08 44</span>
+                                    </span>
+                                    <span class="contactDetail">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                                    <span>+41 79 793 04 31</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-8 rightSec">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="assetsText">Assets and spaces</span>
+                </div>
+                <div class="col-md-8">
+                    <span class="borderLine"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 commonmargin">
+                    <div class="innerWrapSelection">
+                        <span class="filterSection">Filter by</span>
+                        <div class="shortlistedSection">
+                            <span class="filterStyle">Space Type <span class="removeFilter">X</span></span>
+                            <span class="filterStyle">Space Type <span class="removeFilter">X</span></span>
+                            <span class="filterStyle">Space Type <span class="removeFilter">X</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="searchBox">
+                        <input type="" class="form-control" id="" placeholder="search for assets">
+                        <span class="glyphicon glyphicon-search searchIconAssets"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 scrollAuto">
+
+                    <div class="commonBorderWrap panel-group" role="tablist" id="accordion" aria-multiselectable="true">
+                                                <div class="panel panel-default">
+                    <div class="commonBorder">
+                        <div class="imageSection">
+                            <div class="imgWrap">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="assetInfo">
+                                <span class="nameProperty">Stuki Bussiness park</span>
+                                <span class="nameLoc">Hamburg,Germany</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapAssetDetails">
+                            <div class="unitWrap">
+                                <span class="suText">Selected Units</span>
+                                <span class="nuText">04</span>
+                            </div>
+                            <div class="availSpace">
+                                <span class="suText">Available</span>
+                                <span class="nuText">230 m</span>
+                            </div>
+                              <div class="noUnitWrap">
+                                <span class="suText">No of Units</span>
+                                <span class="nuText">05</span>
+                            </div>
+                            <span class="refreshImge"></span>
+                            <span class="acorImge" href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordianWrapper panel-collapse collapse" role="tabpanel" id="collapseTwo" aria-labelledby="headingtwo" aria-expanded="true" style="">
+                <div class="ctaWrap">
+                    <span class="availCta">AVAILABLE</span>
+                    <span class="non-availCta">NOT-AVAILABLE</span>
+                </div>
+                <div class="detailedWrap">
+                    <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Unit</th>
+                                 <th>Floor</th>
+                                 <th>Type</th>
+                                 <th>Area</th>
+                                 <th>Rent</th>
+                                 <th>Availability</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+                                <div class="panel panel-default">
+                    <div class="commonBorder">
+                        <div class="imageSection">
+                            <div class="imgWrap">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="assetInfo">
+                                <span class="nameProperty">Stuki Bussiness park</span>
+                                <span class="nameLoc">Hamburg,Germany</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapAssetDetails">
+                            <div class="unitWrap">
+                                <span class="suText">Selected Units</span>
+                                <span class="nuText">04</span>
+                            </div>
+                            <div class="availSpace">
+                                <span class="suText">Available</span>
+                                <span class="nuText">230 m</span>
+                            </div>
+                              <div class="noUnitWrap">
+                                <span class="suText">No of Units</span>
+                                <span class="nuText">05</span>
+                            </div>
+                            <span class="refreshImge"></span>
+                            <span class="acorImge" href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordianWrapper panel-collapse collapse" role="tabpanel" id="collapseTwo" aria-labelledby="headingtwo" aria-expanded="true" style="">
+                <div class="ctaWrap">
+                    <span class="availCta">AVAILABLE</span>
+                    <span class="non-availCta">NOT-AVAILABLE</span>
+                </div>
+                <div class="detailedWrap">
+                    <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Unit</th>
+                                 <th>Floor</th>
+                                 <th>Type</th>
+                                 <th>Area</th>
+                                 <th>Rent</th>
+                                 <th>Availability</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+                                <div class="panel panel-default">
+                    <div class="commonBorder">
+                        <div class="imageSection">
+                            <div class="imgWrap">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="assetInfo">
+                                <span class="nameProperty">Stuki Bussiness park</span>
+                                <span class="nameLoc">Hamburg,Germany</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapAssetDetails">
+                            <div class="unitWrap">
+                                <span class="suText">Selected Units</span>
+                                <span class="nuText">04</span>
+                            </div>
+                            <div class="availSpace">
+                                <span class="suText">Available</span>
+                                <span class="nuText">230 m</span>
+                            </div>
+                              <div class="noUnitWrap">
+                                <span class="suText">No of Units</span>
+                                <span class="nuText">05</span>
+                            </div>
+                            <span class="refreshImge"></span>
+                            <span class="acorImge" href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordianWrapper panel-collapse collapse" role="tabpanel" id="collapseTwo" aria-labelledby="headingtwo" aria-expanded="true" style="">
+                <div class="ctaWrap">
+                    <span class="availCta">AVAILABLE</span>
+                    <span class="non-availCta">NOT-AVAILABLE</span>
+                </div>
+                <div class="detailedWrap">
+                    <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Unit</th>
+                                 <th>Floor</th>
+                                 <th>Type</th>
+                                 <th>Area</th>
+                                 <th>Rent</th>
+                                 <th>Availability</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+                                <div class="panel panel-default">
+                    <div class="commonBorder">
+                        <div class="imageSection">
+                            <div class="imgWrap">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="assetInfo">
+                                <span class="nameProperty">Stuki Bussiness park</span>
+                                <span class="nameLoc">Hamburg,Germany</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapAssetDetails">
+                            <div class="unitWrap">
+                                <span class="suText">Selected Units</span>
+                                <span class="nuText">04</span>
+                            </div>
+                            <div class="availSpace">
+                                <span class="suText">Available</span>
+                                <span class="nuText">230 m</span>
+                            </div>
+                              <div class="noUnitWrap">
+                                <span class="suText">No of Units</span>
+                                <span class="nuText">05</span>
+                            </div>
+                            <span class="refreshImge"></span>
+                            <span class="acorImge" href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordianWrapper panel-collapse collapse" role="tabpanel" id="collapseTwo" aria-labelledby="headingtwo" aria-expanded="true" style="">
+                <div class="ctaWrap">
+                    <span class="availCta">AVAILABLE</span>
+                    <span class="non-availCta">NOT-AVAILABLE</span>
+                </div>
+                <div class="detailedWrap">
+                    <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Unit</th>
+                                 <th>Floor</th>
+                                 <th>Type</th>
+                                 <th>Area</th>
+                                 <th>Rent</th>
+                                 <th>Availability</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+                        <div class="panel panel-default">
+                    <div class="commonBorder">
+                        <div class="imageSection">
+                            <div class="imgWrap">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="assetInfo">
+                                <span class="nameProperty">Stuki Bussiness park</span>
+                                <span class="nameLoc">Hamburg,Germany</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapAssetDetails">
+                            <div class="unitWrap">
+                                <span class="suText">Selected Units</span>
+                                <span class="nuText">04</span>
+                            </div>
+                            <div class="availSpace">
+                                <span class="suText">Available</span>
+                                <span class="nuText">230 m</span>
+                            </div>
+                              <div class="noUnitWrap">
+                                <span class="suText">No of Units</span>
+                                <span class="nuText">05</span>
+                            </div>
+                            <span class="refreshImge"></span>
+                            <span class="acorImge" href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordianWrapper panel-collapse collapse" role="tabpanel" id="collapseTwo" aria-labelledby="headingtwo" aria-expanded="true" style="">
+                <div class="ctaWrap">
+                    <span class="availCta">AVAILABLE</span>
+                    <span class="non-availCta">NOT-AVAILABLE</span>
+                </div>
+                <div class="detailedWrap">
+                    <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Unit</th>
+                                 <th>Floor</th>
+                                 <th>Type</th>
+                                 <th>Area</th>
+                                 <th>Rent</th>
+                                 <th>Availability</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+                    <div class="commonBorder">
+                        <div class="imageSection">
+                            <div class="imgWrap">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="assetInfo">
+                                <span class="nameProperty">Stuki Bussiness park</span>
+                                <span class="nameLoc">Hamburg,Germany</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapAssetDetails">
+                            <div class="unitWrap">
+                                <span class="suText">Selected Units</span>
+                                <span class="nuText">04</span>
+                            </div>
+                            <div class="availSpace">
+                                <span class="suText">Available</span>
+                                <span class="nuText">230 m</span>
+                            </div>
+                              <div class="noUnitWrap">
+                                <span class="suText">No of Units</span>
+                                <span class="nuText">05</span>
+                            </div>
+                            <span class="refreshImge"></span>
+                            <span class="acorImge" href="#collapseThree" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseThree"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordianWrapper panel-collapse collapse" role="tabpanel" id="collapseThree" aria-labelledby="headingOne" aria-expanded="true" style="">
+                <div class="ctaWrap">
+                    <span class="availCta">AVAILABLE</span>
+                    <span class="non-availCta">NOT-AVAILABLE</span>
+                </div>
+                <div class="detailedWrap">
+                    <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Unit</th>
+                                 <th>Floor</th>
+                                 <th>Type</th>
+                                 <th>Area</th>
+                                 <th>Rent</th>
+                                 <th>Availability</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+                        <div class="panel panel-default">
+                    <div class="commonBorder">
+                        <div class="imageSection">
+                            <div class="imgWrap">
+                                <img src=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="assetInfo">
+                                <span class="nameProperty">Stuki Bussiness park</span>
+                                <span class="nameLoc">Hamburg,Germany</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wrapAssetDetails">
+                            <div class="unitWrap">
+                                <span class="suText">Selected Units</span>
+                                <span class="nuText">04</span>
+                            </div>
+                            <div class="availSpace">
+                                <span class="suText">Available</span>
+                                <span class="nuText">230 m</span>
+                            </div>
+                              <div class="noUnitWrap">
+                                <span class="suText">No of Units</span>
+                                <span class="nuText">05</span>
+                            </div>
+                            <span class="refreshImge"></span>
+                            <span class="acorImge" href="#collapseOne" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordianWrapper collapse panel-collapse" role="tabpanel" id="collapseOne" aria-labelledby="headingOne">
+                <div class="ctaWrap">
+                    <span class="availCta">AVAILABLE</span>
+                    <span class="non-availCta">NOT-AVAILABLE</span>
+                </div>
+                <div class="detailedWrap">
+                    <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Unit</th>
+                                 <th>Floor</th>
+                                 <th>Type</th>
+                                 <th>Area</th>
+                                 <th>Rent</th>
+                                 <th>Availability</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+
+                              <tr>
+                                 <td>1</td>
+                                 <td class="areasm">9834</td>
+                                 <td>u1</td>
+                                 <td>Industrial-commercial</td>
+                                 <td>35.5 m</td>
+                                 <td>30 CHF/m/mo</td>
+                                 <td>Immediately</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+            </div>
+
+            </div>
+            <div class="col-md-12">
+            <div class="selectionState ">6 units selected in 2 assets</div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal start -->
+    <div class="modal fade" id="editDetails" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <span class="glyphicon glyphicon-user userIcon"></span>
+                        <h1 class="fontMedium">Edit Details</h1>
+                    </div>
+                    <div class="row mainModalContainer">
+                        <div class="dealHeader col-md-12">
+                            <span>Personal Details</span>
+                            <hr/>
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="" for="assetType">SALUTATION</label>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle width100" type="button" id="assetType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Dropdown
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu width100" aria-labelledby="assetType">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12"></div>
+                        <div class="form-group  col-md-6 ">
+                            <label class="" for="dealLead">FIRST NAME</label>
+                            <input type="email" class="form-control" id="dealLead" placeholder="">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="" for="dealLead">LAST NAME</label>
+                            <input type="email" class="form-control" id="dealLead" placeholder="">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="" for="dealLead">TITLE</label>
+                            <input type="email" class="form-control" id="dealLead" placeholder="">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="" for="assetType">CATEGORY</label>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle width100" type="button" id="assetType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Client
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu width100" aria-labelledby="assetType">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="" for="dealLead">COMPANY NAME</label>
+                            <input type="email" class="form-control" id="dealLead" placeholder="">
+                        </div>
+                        <div class="dealHeader col-md-12">
+                            <span>Communication Details</span>
+                            <hr/>
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="" for="dealLead">EMAIL</label>
+                            <input type="email" class="form-control" id="dealLead" placeholder="">
+                        </div>
+                        <div class="col-lg-6 form-group ">
+                            <label class="" for="dealLead">MOBILE PHONE</label>
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src=""><span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><img src=""></a></li>
+                                        <li><a href="#"><img src=""></a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 form-group ">
+                            <label class="" for="dealLead">OFFICE PHONE</label>
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src=""><span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><img src=""></a></li>
+                                        <li><a href="#"><img src=""></a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 form-group ">
+                            <label class="" for="dealLead">FAX</label>
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src=""><span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><img src=""></a></li>
+                                        <li><a href="#"><img src=""></a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="dealHeader col-md-12">
+                            <span>Address Details</span>
+                            <hr/>
+                        </div>
+                        <div class="form-group col-md-12 searchAddress m10">
+                          <button type="button" class="btn btn-default btn-block" data-dismiss="modal">SEARCH ADDRESS</button>
+                        </div>
+                         
+                         <div class="form-group  col-md-6">
+                            <label class="" for="city">CITY </label>
+                            <input type="text" class="form-control" id="city" placeholder="">
+                        </div>
+                         <div class="form-group  col-md-6">
+                            <label class="" for="street">STREET</label>
+                            <input type="text" class="form-control" id="street" placeholder="">
+                        </div>
+                         <div class="form-group  col-md-6">
+                            <label class="" for="kanton">KANTON</label>
+                            <input type="tel" class="form-control" id="kanton" placeholder="">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="" for="postcode">POSTCODE</label>
+                            <input type="num" class="form-control" id="postcode" placeholder="">
+                        </div>
+                         <div class="form-group  col-md-6">
+                            <label class="" for="country">COUNTRY</label>
+                            <input type="text" class="form-control" id="country" placeholder="">
+                        </div>
+                        <div class="text-right form-group  col-md-12 m30 btnSection">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal ends -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="leftSection.js"></script>
+<script type="text/javascript">
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</body>
+
+</html>
