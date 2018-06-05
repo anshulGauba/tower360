@@ -402,6 +402,13 @@ li.contactDetailsContainer:first-child {
         display: inline-block;
         padding-left: 22px;
 }
+.shortWrap{
+    position: absolute;
+    top: 29px;
+    z-index: 10;
+    left: 22px;
+}
+
 .removeFilter{
         font-size: 9px;
 
