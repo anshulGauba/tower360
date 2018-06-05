@@ -556,7 +556,7 @@ li.contactDetailsContainer:first-child {
     margin-bottom: 12px;
 }
 /*Right section ends*/
-<<<<<<< HEAD
+
 #saveDetails .mainModalContainer{
 border-radius:3px; 
 padding-bottom: 15px;
@@ -578,9 +578,7 @@ padding-bottom: 15px;
     border-radius: 3px;
     padding: 1px 5px;
 }
-=======
 
 .panel-group .panel+.panel {
     margin-top: 11px;
 }
->>>>>>> 4436a467376bfb75cd9c149833f00e5c45aa6c97
