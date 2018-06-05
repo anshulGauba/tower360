@@ -54,7 +54,7 @@ button:focus {
 
 .leftSection {
     margin-top: 20px;
-    max-height: 600px;
+    max-height: 581px;
     border-radius: 5px;
     box-shadow: 5px 5px 6px 0 rgba(206, 209, 215, 0.5);
     background-color: #ffffff;
@@ -338,7 +338,7 @@ li.contactDetailsContainer:first-child {
   border: solid 1px #e4e5e7;
   margin-top: 20px;
   padding-top: 12px;
-  min-height: 600px;
+  min-height: 580px;
 
 }
 .assetsText{
@@ -376,11 +376,12 @@ li.contactDetailsContainer:first-child {
     content: "";
     width: 10px;
     height: 12.1px;
-    border: 1px solid #ddd;
     display: inline-block;
     margin-left: 5px;
     background-image: url(./images/filterdrop.svg);
     background-repeat: no-repeat;
+    position: absolute;
+    top: 7px;
 }
 .commonmargin{
 
@@ -399,7 +400,7 @@ li.contactDetailsContainer:first-child {
 }
 .shortlistedSection{
         display: inline-block;
-        padding-left: 13px;
+        padding-left: 22px;
 }
 .removeFilter{
         font-size: 9px;
@@ -550,8 +551,12 @@ li.contactDetailsContainer:first-child {
     color: #fff;
     padding: 6px 8px;
     width: 80%;
-    margin: 70px auto;
+    margin: 57px auto;
     border-radius: 17px;
     margin-bottom: 12px;
 }
 /*Right section ends*/
+
+.panel-group .panel+.panel {
+    margin-top: 11px;
+}
