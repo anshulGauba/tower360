@@ -564,6 +564,28 @@ li.contactDetailsContainer:first-child {
 }
 /*Right section ends*/
 
+#saveDetails .mainModalContainer{
+border-radius:3px; 
+padding-bottom: 15px;
+}
+.successText{
+    color:#2c4470;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#saveDetails .modal-dialog {
+    width: 550px;
+    margin: 30px auto;
+}
+
+.areasm span{
+    font-size: 12px;
+    border: 1px solid #e5f1fc;
+    border-radius: 3px;
+    padding: 1px 5px;
+}
+
 .panel-group .panel+.panel {
     margin-top: 11px;
 }
