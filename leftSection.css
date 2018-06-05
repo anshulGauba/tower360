@@ -363,11 +363,14 @@ li.contactDetailsContainer:first-child {
 }
 .filterSection:before{
     content: "";
-    width: 10px;
-    height: 12.1px;
-    border: 1px solid #ddd;
+    width: 12px;
+    height: 13px;
     display: inline-block;
     margin-right: 5px;
+    background-image: url(./images/filter.svg);
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    float: left;
 }
 .filterSection:after{
     content: "";
@@ -376,6 +379,8 @@ li.contactDetailsContainer:first-child {
     border: 1px solid #ddd;
     display: inline-block;
     margin-left: 5px;
+    background-image: url(./images/filterdrop.svg);
+    background-repeat: no-repeat;
 }
 .commonmargin{
 
@@ -489,13 +494,14 @@ li.contactDetailsContainer:first-child {
 
 }
 .acorImge{
-        border: 1px solid #ddd;
     width: 15px;
     display: inline-block;
-    height: 14px;
+    height: 16px;
     float: left;
     margin-left: 14px;
-    margin-top: 14px;
+    margin-top: 17px;
+    background-image: url(./images/assetexpand.svg);
+    background-repeat: no-repeat;
 }
 .refreshImge{
             border: 1px solid #ddd;
