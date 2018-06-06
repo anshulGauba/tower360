@@ -52,15 +52,18 @@ button:focus {
     outline: 0 !important;
 }
 
+.rightSec{
+    min-height: 520px;
+}
 .leftSection {
     margin-top: 20px;
-    max-height: 581px;
     border-radius: 5px;
     box-shadow: 5px 5px 6px 0 rgba(206, 209, 215, 0.5);
     background-color: #ffffff;
     border: solid 1px #e4e5e7;
     padding: 15px;
     overflow: hidden;
+    max-height: 520px
 }
 
 .leftSection form {
@@ -339,8 +342,6 @@ li.contactDetailsContainer:first-child {
   border: solid 1px #e4e5e7;
   margin-top: 20px;
   padding-top: 12px;
-  min-height: 580px;
-
 }
 .assetsText{
   font-size: 16px;
@@ -601,7 +602,7 @@ background-image: url(./images/list_view.svg);
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -170px;
+    bottom: 0px;
 }
 /*Right section ends*/
 
