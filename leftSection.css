@@ -358,17 +358,17 @@ li.contactDetailsContainer:first-child {
     border: solid 1px #e1e5eb;
     display: inline-block;
 }
-.filterSection,
-.filterSection:hover,
-.filterSection:focus,
-.filterSection:active{
+.filterSection button,
+.filterSection button:hover,
+.filterSection button:focus,
+.filterSection button:active{
   /* width: 53px;
   height: 17px; */
   color: #716f6f !important;
   border: none !important;
 }
 
-.filterSection:before{
+.filterSection button:before{
     content: "";
     width: 12px;
     height: 13px;
@@ -379,7 +379,7 @@ li.contactDetailsContainer:first-child {
     margin-top: 2px;
     float: left;
 }
-.filterSection:after{
+.filterSection button:after{
     content: "";
     width: 10px;
     height: 12.1px;
@@ -391,10 +391,11 @@ li.contactDetailsContainer:first-child {
     top: 15px;
     right: -6px;
 }
-.filterSection + .dropdown-menu{
+.filterSection button + .dropdown-menu{
     min-width: 160px;
+    color: #2c4471;
 }
-.filterSection + .dropdown-menu li div{
+.filterSection button + .dropdown-menu li div{
     padding: 0px 10px;
 }
 .ui-widget.ui-widget-content{
@@ -686,4 +687,34 @@ padding-bottom: 15px;
 
 .wrapHeader{
     margin-top: 20px;
+}
+.applyBtn{
+    font-size: 11px;
+    color: #2c4471;
+    border: 1px solid #2c4471;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 2px 12px;
+    cursor: pointer;
+    
+}
+.mainFliter{
+    font-size: 12px;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 6px;
+}
+.resetLink{
+    font-size: 12px;
+    text-decoration: underline;
+    color: #1ed26a !important;
+    cursor: pointer;
+}
+.resetLink:hover{
+background: transparent !important;
+text-decoration: underline !important;
+}
+.applyBtn:hover{
+background: transparent !important;
+    
 }

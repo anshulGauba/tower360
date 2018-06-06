@@ -131,8 +131,7 @@
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
                                 <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -268,27 +267,29 @@
 
         <div class="col-md-8 rightSec rel">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="assetsText">Assets and spaces</span>
-                </div>
-                <div class="col-md-8">
-                    <span class="borderLine"></span>
-                </div>
+            
+                <div class="dealHeader col-md-12">
+                        <span>Assets and spaces</span>
+                        <hr>
+                    </div>
             </div>
             <div class="row">
                 <div class="col-md-7 commonmargin">
                     <div class="innerWrapSelection">
-                        <!-- <span class="filterSection">Filter by</span> -->
+               
 
                         <!-- filter section -->
-                        <div class="btn-group ">
-                            <button type="button" class="btn btn-default dropdown-toggle filterSection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="btn-group filterSection">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Filter by
                             </button>
                             <ul class="dropdown-menu">
-                            <li><div class="checkbox"> <label> <input type="checkbox"> Check me out </label> </div></li>
-                            <li><div class="checkbox"> <label> <input type="checkbox"> Check me out </label> </div></li>
-                            <li><div class="checkbox"> <label> <input type="checkbox"> Check me out </label> </div></li>
+                            <li><span class="mainFliter">FILTER BY</span><a class="pull-right resetLink">Reset</a></li>   
+                            <li><div class="checkbox"> <label> <input type="checkbox"> Area Type </label> </div></li>
+                            <li><div class="checkbox"> <label> <input type="checkbox"> Space Type </label> </div></li>
+                            <li><div class="checkbox"> <label> <input type="checkbox"> City </label> </div></li>
+                            <li><div class="checkbox"> <label> <input type="checkbox"> Area Required </label> </div></li>
+                            <li><a class="applyBtn pull-right">APPLY</a></li>
                             </ul>
                         </div>
                         <!-- filter section -->
@@ -1141,6 +1142,14 @@
 $( function() {
     $( "#datepicker" ).datepicker();
   } );
+
+//   
+$(document).on('click', '.filterSection .dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+$(document).on('click', '.filterSection a', function (e) {
+    $('.filterSection').removeClass('open');
+});
   </script>
 </body>
 
