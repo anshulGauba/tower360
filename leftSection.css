@@ -509,7 +509,7 @@ li.contactDetailsContainer:first-child {
 }
 .scrollAuto{
       overflow-y:scroll;
-    max-height: 400px;
+    max-height: 320px;
 }
 .commonBorderWrap{
     margin-bottom: 13px;
