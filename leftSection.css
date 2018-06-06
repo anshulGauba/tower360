@@ -278,6 +278,7 @@ li.contactDetailsContainer:first-child {
     width: 130px;
     margin-left: 15px;
     font-size: 12px;
+    padding: 10px 0;
 }
 
 .btnSection .btn-default {
@@ -512,31 +513,47 @@ li.contactDetailsContainer:first-child {
     background-repeat: no-repeat;
 }
 .refreshImge{
-            border: 1px solid #ddd;
     width: 15px;
     display: inline-block;
-    height: 14px;
+    height: 16px;
     float: left;
-    margin-left: 14px;
-    margin-top: 14px;
+    margin-left: 19px;
+    margin-top: 12px;
+    background-image: url(./images/reset.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+
 }
-.ctaWrap{
-        margin: 20px 0;
-            padding-left: 20px;
+.tickImg{
+    background-image: url(./images/save_grid.svg);
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 90%;
 }
-.availCta,.non-availCta{
+.ctaWrap,.ctaWrapTop{
+         margin: 20px 0;
+        padding-left: 20px;
+}
+.ctaWrapTop{
+        float: right;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.availCta,.non-availCta,.listCta,.mapCta{
        border: 1px solid #ddd;
         padding: 6px 12px;
         font-size: 11px;
 }
-.non-availCta{
+.non-availCta,.mapCta{
     margin-left: -6px;
     border-left: none;
         border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     color: #2c4470;
 }
-.availCta{
+.availCta,.listCta{
     background: #2c4470;
     color: #fff;
     border-right: none;
@@ -544,6 +561,26 @@ li.contactDetailsContainer:first-child {
     padding-right: 26px;
         border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.listCta:before{
+content:"";
+width:12px;
+height:12px;
+border:1px solid;
+vertical-align: top;
+background-image: url(./images/list_view.svg);
+}
+.mapCta:before{
+    content: "";
+    width: 22px;
+    height: 17px;
+    vertical-align: top;
+    background-image: url(./images/map_view.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+
 }
 .imageSection{
     display: inline-block;
@@ -561,6 +598,10 @@ li.contactDetailsContainer:first-child {
     margin: 57px auto;
     border-radius: 17px;
     margin-bottom: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -170px;
 }
 /*Right section ends*/
 
@@ -585,7 +626,28 @@ padding-bottom: 15px;
     border-radius: 3px;
     padding: 1px 5px;
 }
+.cdText{
+        color: #2c4471;
+    display: block;
+    padding-top: 3px;
+
+}
 
 .panel-group .panel+.panel {
     margin-top: 11px;
+}
+.gobackSec{
+    color: #3ed881;
+    display: block;
+    padding-bottom: 3px;
+    font-size: 13px;
+}
+.backArrow{
+        display: inline-block;
+    float: left;
+    margin-right: 8px;
+}
+
+.wrapHeader{
+    margin-top: 20px;
 }
