@@ -569,11 +569,8 @@ li.contactDetailsContainer:first-child {
     border-left: none;
         border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: #2c4470;
 }
 .availCta,.listCta{
-    background: #2c4470;
-    color: #fff;
     border-right: none;
     padding-left: 21px;
     padding-right: 26px;
@@ -717,4 +714,168 @@ text-decoration: underline !important;
 .applyBtn:hover{
 background: transparent !important;
     
+}
+
+.ctaWrapTop span{
+ cursor: pointer;
+}
+.ctaWrapTop span.active{
+    background: #2c4470;
+    color: #fff;
+}
+
+.mapCtaRow img{
+overflow: hidden;
+width: 100%;
+max-height: 407px;
+}
+
+.thumbNail{
+    position: absolute;
+    z-index: 10;
+}
+.thumbNail span.markDot{
+    border: 2px solid #2c4470;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    background: #2c4470;
+    border-radius: 50%;
+    box-shadow:5px 5px 6px 0 rgba(252, 253, 255, 0.5);
+    display: inline-block;
+}
+
+.thumbNail span.markDot:hover{
+    background: #1ed26a;
+    cursor: pointer;   
+}
+
+.thumbNail span.markDot:hover + div{
+   display: block !important; 
+   position: relative;
+   top: -70px;
+   right: 79px;
+}
+.t1{
+    left: 100px;
+    top: 130px;
+}
+.t2{
+    left: 210px;
+    top: 230px;
+}
+.t3{
+    left: 150px;
+    top: 120px;
+}
+
+.thumbNail .media .media-body{
+    color: #2c4470;
+    font-size: 10px;
+    width: 120px;
+}
+.thumbNail .media{
+
+    background: #fff;
+    padding: 5px;
+}
+.thumbNail .media img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+.p5{
+    padding-top:5px;
+}
+
+.arrow_box {
+    border: 1px solid #fff;
+    box-shadow: 5px 5px 6px 0 rgba(206, 209, 215, 0.5);
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 5px;
+	margin-left: -5px;
+}
+.arrow_box:before {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 6px;
+	margin-left: -6px;
+}
+
+.mapBuildinInfo{
+    position: absolute;
+    max-width: 500px;
+    top: 0px;
+    min-height: 520px;
+    right: 0px;
+}
+.closeInfo{
+    display: inline-block;
+    color: #2c4470;
+    background: #fff;
+    border: 1px solid #2c4470;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 3px;
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    cursor: pointer;
+}
+.buildIngImageSection img{
+    max-height: 130px;
+    min-height: 130px;
+    width: 100%;
+    display: inline-block;
+    background: aliceblue;
+}
+.buildIngImageSection div.assetInfo {
+    position: absolute;
+    top: 75px;
+    font-weight: 400 !important;
+}
+.areaWrapper{
+    max-height: 390px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.truncatetext{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 72px;
+}
+
+
+.buildingInfo{    border-color: rgba(255, 255, 255, 0);
+    background: #fff;
+}
+
+.innerWrapSelection.disable .filterStyle{
+    color: #333;
+    background: #ddd;
+    border: solid 1px#666;
+}
+
+.availCta{
+    background: #2c4470;
+    color: #fff;
 }
